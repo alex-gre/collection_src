@@ -1,4 +1,4 @@
-//RecordDemo.pas
+п»ї//RecordDemo.pas
 {======type record pascal = struct c_lang=====}
 
 program TypeRecord;
@@ -13,26 +13,26 @@ type goods = record
 var coat: goods;
     f: text;
 begin
-  writeln('Введите наименование : ');
+  writeln('Р’РІРµРґРёС‚Рµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ : ');
   readln(coat.name);
-  writeln('Введите оптовую цену : ');
+  writeln('Р’РІРµРґРёС‚Рµ РѕРїС‚РѕРІСѓСЋ С†РµРЅСѓ : ');
   readln(coat.price);
-  writeln('Введите наценку: ');
+  writeln('Р’РІРµРґРёС‚Рµ РЅР°С†РµРЅРєСѓ: ');
   readln(coat.percent);
-  writeln('Введите объем партии штук: ');
+  writeln('Р’РІРµРґРёС‚Рµ РѕР±СЉРµРј РїР°СЂС‚РёРё С€С‚СѓРє: ');
   readln(coat.vol);
-  writeln('Введите дату поставки: ');
+  writeln('Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ РїРѕСЃС‚Р°РІРєРё: ');
   readln(coat.date);
 
   assign(f,'my.dat');
   rewrite(f);
 
-   writeln(f,'Прием товара на склад...');
-   writeln(f,'Наименование товара ',coat.name);
-   writeln(f,'Оптовая цена товара ',coat.price:3:2);
-   writeln(f,'Наценка товара ',coat.percent:3:2);
-   writeln(f,'Объем партии штук товара ',coat.percent:3:2);
-   writeln(f,'Дата поставки товара ',coat.date);
+   writeln(f,'РџСЂРёРµРј С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°Рґ...');
+   writeln(f,'РќР°РёРјРµРЅРѕРІР°РЅРёРµ С‚РѕРІР°СЂР° ',coat.name);
+   writeln(f,'РћРїС‚РѕРІР°СЏ С†РµРЅР° С‚РѕРІР°СЂР° ',coat.price:3:2);
+   writeln(f,'РќР°С†РµРЅРєР° С‚РѕРІР°СЂР° ',coat.percent:3:2);
+   writeln(f,'РћР±СЉРµРј РїР°СЂС‚РёРё С€С‚СѓРє С‚РѕРІР°СЂР° ',coat.percent:3:2);
+   writeln(f,'Р”Р°С‚Р° РїРѕСЃС‚Р°РІРєРё С‚РѕРІР°СЂР° ',coat.date);
 
    close(f);
 end.
