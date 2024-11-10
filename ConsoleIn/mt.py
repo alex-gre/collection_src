@@ -1,8 +1,6 @@
 import math
 
 
-
-
 class Calc:
        Pi = math.pi
 
@@ -41,7 +39,6 @@ class Calc:
               self.b = b
               return (self.a  * self.b)
       
-       
                      
               
 if __name__ == '__main__':
@@ -49,7 +46,6 @@ if __name__ == '__main__':
 
        c1 = Calc()
        
-       a=int(input('input digit a: '))
        a=int(input('input digit a: '))
        b=int(input('input digit b: '))
        print(f'Sum = {c1.sum(a,b)}')
